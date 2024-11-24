@@ -11,9 +11,7 @@ body {
 
 .container {
     text-align: center;
-    background: #ffffff+-;
-    padding: 40px;
-    border-radius: 16px;
+    color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 900px; /* Adjusted container width to accommodate the larger circle */
 }
@@ -28,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .image-circle img {
@@ -39,18 +37,27 @@ body {
 
 .container h1 {
     font-size: 1.8rem; /* Slightly larger font for the heading */
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
-
+.container h2 {
+    font-size: 1.3rem; /* Slightly larger font for the heading */
+    margin-top: 10px;
+    font-style: italic;
+}
 .links {
+    position: absolute;
+    top: 50%; /* Adjust this value to move the links up/down */
+    left: 120px; /* Distance from the left side */
+    right: 100px; /* Distance from the right side */
     display: flex;
-    justify-content: space-between; /* Space between the links */
-    width: 100%; /* Full width to stretch the links */
+    justify-content: space-between;
+    width: calc(100% - 260px); /* Full width minus the left and right padding */
+    transform: translateY(-50%); /* Adjusts for the exact middle of the page */
 }
 
 .links a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 30px;
     font-weight: bold;
     color: #007bff;
 }
