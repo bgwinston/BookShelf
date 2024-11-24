@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff+-;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 900px; /* Adjusted container width to accommodate the larger circle */
+}
+
+.image-circle {
+    display: inline-block;
+    width: 850px; /* Outer circle width */
+    height: 850px; /* Outer circle height */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #e0e0e0; /* Background color of the outer circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.image-circle img {
+    width: 800px; /* Image size */
+    height: 800px; /* Image size */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.container h1 {
+    font-size: 1.8rem; /* Slightly larger font for the heading */
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between; /* Space between the links */
+    width: 100%; /* Full width to stretch the links */
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.left-link {
+    text-align: left;
+}
+
+.right-link {
+    text-align: right;
+}
