@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,19 +10,21 @@ body {
     background-color: #000000;
 }
 
+/* Container Styles for the Main Content (image, title, etc.) */
 .container {
     text-align: center;
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 900px; /* Adjusted container width to accommodate the larger circle */
+    width: 900px; 
 }
 
+/* Image Circle (for user profile or any central image) */
 .image-circle {
     display: inline-block;
     width: 850px; /* Outer circle width */
     height: 850px; /* Outer circle height */
     border-radius: 50%; /* Makes it a circle */
-    background-color: #e0e0e0; /* Background color of the outer circle */
+    background-color: #e0e0e0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,27 +32,32 @@ body {
     margin-top: 20px;
 }
 
+/* Style for the image inside the circle */
 .image-circle img {
     width: 800px; /* Image size */
     height: 800px; /* Image size */
     border-radius: 50%; /* Makes the image circular */
 }
 
+/* Header Styles */
 .container h1 {
     font-size: 1.8rem; /* Slightly larger font for the heading */
     margin-top: 10px;
 }
+
 .container h2 {
-    font-size: 1.3rem; /* Slightly larger font for the heading */
+    font-size: 1.3rem; /* Slightly smaller font for the heading */
     margin-top: 10px;
     font-style: italic;
 }
+
+/* Link Styles */
 .links {
     position: absolute;
     top: 50%; /* Adjust this value to move the links up/down */
     left: 120px; /* Distance from the left side */
     right: 100px; /* Distance from the right side */
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     width: calc(100% - 260px); /* Full width minus the left and right padding */
     transform: translateY(-50%); /* Adjusts for the exact middle of the page */
@@ -72,4 +80,72 @@ body {
 
 .right-link {
     text-align: right;
+}
+
+/* Login Form Styles */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transform: translateY(-50%);
+}
+
+.login-container h1 {
+    font-size: 1.8rem; /* Font size for the login heading */
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+}
+
+.login-container label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    text-align: center;
+}
+
+.login-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
 }
