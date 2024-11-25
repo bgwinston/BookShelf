@@ -12,7 +12,7 @@
 
     <!-- Navigation Section -->
     <nav class="navigation">
-        <img src="images/Logo.png" alt="Book Logo" class="logo">
+        <img src="images/Logo.png" aria-label ="Book Logo" alt="Book Logo" class="logo">
         <div class="button-bar">
             <button>Add a Book</button>
             <button>Dashboard</button>
@@ -26,44 +26,48 @@
         <h2>Welcome to your Dashboard!</h2>
     </div>
     <div class="sections-container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3 section1">
+                <h3>Just Added!</h3>
+                <ul class="list">
+                    <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
+                    <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
+                    <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
+                </ul>
+                <a href="#">See More!</a>
+            </div>
 
-        <div class="section1">
-            <h3>Just Added!</h3>
-            <ul class="list">
-                <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
-                <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
-                <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
-            </ul>
-            <a href="#">See More!</a>
-        </div>
+            <div class="col-12 col-md-6 col-lg-3 section2">
+                <h3>Recommendations</h3>
+                <ul class="list">
+                    <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
+                    <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
+                    <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
+                </ul>
+                <a href="#">See More!</a>
+            </div>
 
-        <div class="section2">
-            <h3>Recommendations</h3>
-            <ul class="list">
-                <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
-                <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
-                <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
-            </ul>
-            <a href="#">See More!</a>
+            <div class="col-12 col-md-6 col-lg-3 section3">
+                <h3>Wishlist</h3>
+                <ul class="list">
+                    <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
+                    <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
+                    <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
+                </ul>
+                <a href="#">See More!</a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 section4">
+                <h3>Overdue</h3>
+                <ul class="list">
+                    <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
+                    <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
+                    <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
+                </ul>
+                <a href="#">See More!</a>
+            </div>
         </div>
-        <div class="section3">
-            <h3>Wishlist</h3>
-            <ul class="list">
-                <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
-                <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
-                <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
-            </ul>
-            <a href="#">See More!</a>
-        </div>
-        <div class="section4">
-            <h3>Overdue</h3>
-            <ul class="list">
-                <li><div class="icon" style="background-color: #ffcc00;"></div> Book 1</li>
-                <li><div class="icon" style="background-color: #ff0000;"></div> Book 2</li>
-                <li><div class="icon" style="background-color: #008000;"></div> Book 3</li>
-            </ul>
-            <a href="#">See More!</a>
-        </div>
+</div>
     <!-- Footer Section -->
     <footer>
         <hr>

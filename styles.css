@@ -204,9 +204,8 @@ body {
     background-color: #FFDA6D;
 }
 
-/* Content Area - Ensure space for header and navigation */
 .main-content {
-    padding-top: 80px; /* Space to ensure content is below the fixed navigation */
+    padding-top: 80px; 
 }
 
 /* Footer Section */
@@ -237,73 +236,74 @@ footer {
     color: #FFBC00;
 }
 
-    
-/* Container for all sections (1 to 4) */
 .sections-container {
-display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-    margin-top: 100px;
-    flex-wrap: wrap;
-    flex-grow: 1; /* Allow sections to grow and fill the remaining space */
+    width: 80%; /* Use full width of the container */
+    padding: 0 10px; /* Add padding to prevent overflow */
+    box-sizing: border-box;
+}
+/* Container for all sections (1 to 4) */
+.sections-container .row{
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    gap: 10px; /* Adjust spacing between sections */
+    margin-top: 50px;
+    
 }
 
 /* Section 1 Styles */
 .section1 {
-    flex: 1; /* Make each section take equal width */
-    max-width: 500px; /* Max width */
-    padding: 50px; /* Add padding */
-    background-color: #C0C0C0; /* Optional background color */
-    border-radius: 8px; /* Optional rounded corners */
-    text-align: center; /* Center text horizontally */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Start from top */
-    align-items: flex-start; /* Align content to left */
-    height: auto; /* Set height to auto */
+    padding: 15px;
+    background-color: #C0C0C0; 
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+
 }
 
 /* Section 2 Styles */
 .section2 {
-    flex: 1; /* Make each section take equal width */
-    max-width: 500px; /* Max width */
-    padding: 50px; /* Add padding */
-    background-color: #C0C0C0; /* Optional background color */
-    border-radius: 8px; /* Optional rounded corners */
-    text-align: center; /* Center text horizontally */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Start from top */
-    align-items: flex-start; /* Align content to left */
-    height: auto; /* Set height to auto */
+    padding: 15px;
+    background-color: #C0C0C0; 
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+
 }
 
 /* Section 3 Styles */
 .section3 {
-    flex: 1; /* Make each section take equal width */
-    max-width: 500px; /* Max width */
-    padding: 50px; /* Add padding */
-    background-color: #C0C0C0; /* Optional background color */
-    border-radius: 8px; /* Optional rounded corners */
-    text-align: center; /* Center text horizontally */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Start from top */
-    align-items: flex-start; /* Align content to left */
-    height: auto; /* Set height to auto */
+    padding: 15px;
+    background-color: #C0C0C0; 
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
 }
 
 /* Section 4 Styles */
 .section4 {
-    flex: 1; /* Make each section take equal width */
-    max-width: 500px; /* Max width */
-    padding: 50px; /* Add padding */
-    background-color: #C0C0C0; /* Optional background color */
-    border-radius: 8px; /* Optional rounded corners */
-    text-align: center; /* Center text horizontally */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Start from top */
-    align-items: flex-start; /* Align content to left */
-    height: auto; /* Set height to auto */
+    padding: 15px;
+    background-color: #C0C0C0; 
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
 }
