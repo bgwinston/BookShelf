@@ -11,7 +11,59 @@ body {
     background-color: #000000;
 }
 
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
 
+.image-circle img {
+    width: 600px; /* Adjust size as needed */
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.left-link,
+.right-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.left-link:hover,
+.right-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.left-link {
+    margin-right: auto; /* Sticks to the left */
+}
+
+.right-link {
+    margin-left: auto; /* Sticks to the right */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
 
 /* Welcome Message Styles */
 .welcome-message {
