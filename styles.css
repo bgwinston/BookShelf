@@ -11,6 +11,8 @@ body {
     background-color: #000000;
 }
 
+
+
 /* Welcome Message Styles */
 .welcome-message {
     text-align: center;
@@ -238,7 +240,7 @@ footer {
     
 /* Container for all sections (1 to 4) */
 .sections-container {
-    display: flex;
+display: flex;
     justify-content: flex-start;
     gap: 30px;
     margin-top: 100px;
