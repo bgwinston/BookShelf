@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the updated CSS -->
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <h1 class="header-title">My Bookshelf</h1>
+    <div class="welcome">
+        <!-- Welcome Back Message -->
+        <div class="welcome-message">
+            <h2>Welcome Back to your BookShelf!</h2>
         </div>
-    </header>
-    <div class="login-wrapper">
-        <div class="login-image">
-            <img src="images/StudentsLibrary.jpg" alt="Students reading books together in a library">
+        <!-- Login and Image Layout -->
+        <div class="login-wrapper">
+            <!-- Login Container -->
+            <div class="login-container">
+                <h1>Login</h1>
+                <form action="/submit-login" method="POST">
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="create-account.html">Create one</a></p>
+            </div>
+            <!-- Image Container -->
+            <div class="login-image">
+                <img src="images/StudentsLibrary.jpg" alt="Students reading books together in a library">
+            </div>
         </div>
-        <div class="login-container">
-        <h1>Login</h1>
-        <form action="/submit-login" method="POST">
-            <div class="form-group">
-                <label for="username">Email</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="create-account.html">Create one</a></p>
     </div>
 </body>
 </html>
