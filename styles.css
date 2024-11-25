@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -22,6 +23,18 @@ body {
     font-style: italic;
     margin: 0;
 }
+.dashboard-message {
+    margin-top: 100px;  /* Add space at the top */
+    padding: 20px;
+    background-color: lightgray; /* Just for visibility */
+    text-align: center;
+ }
+ 
+ .dashboard-message h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: black;
+ }
 
 /* Login Wrapper for Layout */
 .login-wrapper {
@@ -112,4 +125,183 @@ body {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+}
+
+/* General styles for navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out logo and buttons */
+    padding: 10px 20px;
+    background-color: #004B87; /* Deep Blue background for header */
+    color: white;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width navigation bar */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add depth */
+    padding-top: 15px; /* Add padding to adjust for fixed position */
+    padding-bottom: 15px;
+}
+
+
+
+/* Logo styling */
+.navigation .logo {
+    height: 60px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Button bar styling */
+.navigation .button-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons and search box */
+}
+
+/* Buttons in the button bar */
+.navigation .button-bar button {
+    background-color: #FFBC00; /* Warm Gold button background */
+    color: #004B87; /* Deep Blue text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .button-bar button:hover {
+    background-color: #FFDA6D; /* Lighter Gold hover effect */
+}
+
+/* Search box */
+.navigation .search-box {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.navigation .search-button {
+    background-color: #FFBC00;
+    color: #004B87;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .search-button:hover {
+    background-color: #FFDA6D;
+}
+
+/* Content Area - Ensure space for header and navigation */
+.main-content {
+    padding-top: 80px; /* Space to ensure content is below the fixed navigation */
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #004B87;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.footer-links a {
+    color: #FFBC00;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFBC00;
+}
+
+    
+/* Container for all sections (1 to 4) */
+.sections-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Allow sections to grow and fill the remaining space */
+}
+
+/* Section 1 Styles */
+.section1 {
+    flex: 1; /* Make each section take equal width */
+    max-width: 500px; /* Max width */
+    padding: 50px; /* Add padding */
+    background-color: #C0C0C0; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Start from top */
+    align-items: flex-start; /* Align content to left */
+    height: auto; /* Set height to auto */
+}
+
+/* Section 2 Styles */
+.section2 {
+    flex: 1; /* Make each section take equal width */
+    max-width: 500px; /* Max width */
+    padding: 50px; /* Add padding */
+    background-color: #C0C0C0; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Start from top */
+    align-items: flex-start; /* Align content to left */
+    height: auto; /* Set height to auto */
+}
+
+/* Section 3 Styles */
+.section3 {
+    flex: 1; /* Make each section take equal width */
+    max-width: 500px; /* Max width */
+    padding: 50px; /* Add padding */
+    background-color: #C0C0C0; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Start from top */
+    align-items: flex-start; /* Align content to left */
+    height: auto; /* Set height to auto */
+}
+
+/* Section 4 Styles */
+.section4 {
+    flex: 1; /* Make each section take equal width */
+    max-width: 500px; /* Max width */
+    padding: 50px; /* Add padding */
+    background-color: #C0C0C0; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Start from top */
+    align-items: flex-start; /* Align content to left */
+    height: auto; /* Set height to auto */
 }
