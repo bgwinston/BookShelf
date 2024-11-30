@@ -356,3 +356,12 @@ footer {
     height: auto;
     width: 100%;
 }
+
+/*Create account */
+ .create-account-container {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
