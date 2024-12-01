@@ -249,18 +249,21 @@ h2 {
 
 /* Footer Section */
 footer {
-    width: 100%;
-    background-color: #004B87;
-    color: white;
-    text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
-    position: relative;
+    width: 100%; /* Footer spans the full width */
+    background-color: #004B87; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center-align footer content */
+    padding: 10px 0; /* Add some vertical padding */
+    position: fixed; /* Fix footer to the bottom of the page */
+    bottom: 0; /* Place footer at the bottom */
+    left: 0; /* Align footer to the left */
+    z-index: 10; /* Ensure footer stays above other elements */
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
 }
 
@@ -386,4 +389,131 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+/*Add a Book */
+/* Add Book Container */
+.add-book-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* Space between login container and image */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+/* Remove default body margins and padding */
+.add-book {
+    text-align: center; /* Center the text horizontally */
+    font-size: 2 rem; /* Larger font size to make it prominent */
+    margin: 20px 0; /* Add spacing above and below the heading */
+    padding: 0; /* Remove unnecessary padding */
+    color: black; /* Darker text color for better visibility */
+}
+
+.book-container {
+    width: 50%; /* Full width of the page */
+    max-width: none; /* Remove any width constraints if present */
+    margin: 0 auto; /* Center container if it has a width */
+    text-align: center; /* Ensure child elements like <h1> are centered */
+    flex: 1; /* Ensures the description container takes up its content width */
+    max-width: 600px
+
+}
+
+/* Description Container */
+.description-container {
+    flex: 1; /* Ensures the description container takes up its content width */
+    align-items: flex-start;
+    max-width: 600px
+
+}
+
+/* Form Group */
+.form-group {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px 
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Description Styles */
+#description {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    font-family: Arial, sans-serif; /* Match the font family */
+    font-size: 1.1rem; /* Match the font size */
+    color: black; /* Match the font color */
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: none; /* Disable resizing */
+    
+}
+
+/* Description Heading */
+.description-container h2 {
+    font-family: Arial, sans-serif; /* Use a consistent font family */
+    font-size: 1.1rem; /* Same font size */
+    font-weight: normal; /* Match the weight of other labels */
+    color: black; /* Ensure the text color is consistent */
+}
+
+
+/* Button Container */
+.button-container-submit {
+    text-align: left; /* Aligns the button to the left */
+    margin-top: 20px;
+    padding-left: 20px; /* Moves it away from the edge */
+}
+
+/* Button Styles */
+.button-container-submit button {
+    background-color: blue; /* Set the button's background to blue */
+    color: white; /* Make the text color white for contrast */
+    border: none; /* Remove any default borders */
+    padding: 10px 20px; /* Add some padding for better size */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    font-size: 16px; /* Adjust font size */
+}
+
+.button-container-submit button:hover {
+    background-color: darkblue; /* Change button color on hover */
+}
+/* Checkbox Group */
+.form-group.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align checkboxes to the left */
+    gap: 8px; /* Space between each checkbox */
+}
+
+/* Checkbox Label Styling */
+.form-group.checkbox-group label {
+    display: flex;
+    align-items: center; /* Vertically center the label and checkbox */
+    font-size: 1rem; /* Adjust font size */
+    color: black; /* Set label color */
+    cursor: pointer; /* Pointer cursor for better UX */
+}
+
+/* Checkbox Styling */
+.form-group.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label text */
+    width: 18px; /* Adjust checkbox size */
+    height: 18px; /* Match width and height */
 }
