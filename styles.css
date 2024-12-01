@@ -65,18 +65,8 @@ h2 {
     color: #666;
 }
 
-/* Welcome Message Styles */
-.welcome-message {
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
-}
 
-.welcome-message h2 {
-    font-size: 2.5rem;
-    font-style: italic;
-    margin: 0;
-}
+
 .dashboard-message {
     margin-top: 100px;  /* Add space at the top */
     padding: 20px;
@@ -359,9 +349,41 @@ footer {
 
 /*Create account */
  .create-account-container {
-    margin-top: 20px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding:40px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.create-account-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.create-account-container input{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#create-account{
+    background-image: url('./images/LibraryBackground.jpg');
+
+}
+
+.create-account-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
