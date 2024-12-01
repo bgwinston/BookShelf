@@ -1,519 +1,58 @@
-/* General Body Styles */
+/* variables file*/
+/* Reusable code */
+.index-container h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: black;
+  text-align: center;
+}
+.index-container h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: black;
+  text-align: center;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+/* index.html */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-
-.container {
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-}
-
 .image-circle img {
-    width: 600px; /* Adjust size as needed */
-    height: 600px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
-
 .left-link,
 .right-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #007bff;
-    padding: 10px 20px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-    white-space: nowrap; /* Prevents text wrapping */
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  white-space: nowrap;
+  /* Prevents text wrapping */
 }
-
 .left-link:hover,
 .right-link:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.left-link {
-    margin-right: auto; /* Sticks to the left */
-}
-
-.right-link {
-    margin-left: auto; /* Sticks to the right */
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin: 20px 0;
-    color: #333;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #666;
-}
-
-
-
-.dashboard-message {
-    margin-top: 100px;  /* Add space at the top */
-    padding: 20px;
-    background-color: lightgray; /* Just for visibility */
-    text-align: center;
- }
- 
- .dashboard-message h2 {
-    font-size: 2.5rem;
-    font-style: italic;
-    color: black;
- }
-
-/* Login Wrapper for Layout */
-.login-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px; /* Space between login container and image */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px;
-}
-
-/* Login Container Styles */
-.login-container {
-    padding: 40px;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.login-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.login-container .form-group {
-    margin-bottom: 20px;
-}
-
-.login-container label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-
-.login-container input {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.2rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.login-container button:hover {
-    background-color: #0056b3;
-}
-
-.login-container p {
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.login-container a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.login-container a:hover {
-    text-decoration: underline;
-}
-
-/* Login Image Styles */
-.login-image {
-    flex-shrink: 0;
-    width: 70%; /* Adjust the width relative to the container */
-    text-align: center;
-}
-
-.login-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-/* General styles for navigation */
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space out logo and buttons */
-    padding: 10px 20px;
-    background-color: #004B87; /* Deep Blue background for header */
-    color: white;
-    position: fixed; /* Fixed position to stay at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full-width navigation bar */
-    z-index: 1000; /* Ensure it's above other content */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add depth */
-    padding-top: 15px; /* Add padding to adjust for fixed position */
-    padding-bottom: 15px;
-}
-
-
-
-/* Logo styling */
-.navigation .logo {
-    height: 60px; /* Adjust logo height */
-    width: auto; /* Maintain aspect ratio */
-}
-
-/* Button bar styling */
-.navigation .button-bar {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between buttons and search box */
-}
-
-/* Buttons in the button bar */
-.navigation .button-bar button {
-    background-color: #FFBC00; /* Warm Gold button background */
-    color: #004B87; /* Deep Blue text color */
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.navigation .button-bar button:hover {
-    background-color: #FFDA6D; /* Lighter Gold hover effect */
-}
-
-/* Search box */
-.navigation .search-box {
-    padding: 8px 12px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 200px;
-}
-
-.navigation .search-button {
-    background-color: #FFBC00;
-    color: #004B87;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.navigation .search-button:hover {
-    background-color: #FFDA6D;
-}
-
-
-/* Footer Section */
-footer {
-    width: 100%; /* Footer spans the full width */
-    background-color: #004B87; /* Footer background color */
-    color: white; /* Footer text color */
-    text-align: center; /* Center-align footer content */
-    padding: 10px 0; /* Add some vertical padding */
-    position: fixed; /* Fix footer to the bottom of the page */
-    bottom: 0; /* Place footer at the bottom */
-    left: 0; /* Align footer to the left */
-    z-index: 10; /* Ensure footer stays above other elements */
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.footer-links a {
-    color: #FFBC00;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #FFBC00;
-}
-
-.sections-container {
-    width: 80%; /* Use full width of the container */
-    padding: 0 10px; /* Add padding to prevent overflow */
-    box-sizing: border-box;
-}
-/* Container for all sections (1 to 4) */
-.sections-container .row{
-    display: flex;
-    justify-content: space-between; /* Distribute sections evenly */
-    gap: 10px; /* Adjust spacing between sections */
-    margin-top: 50px;
-    
-}
-
-/* Section 1 Styles */
-.section1 {
-    padding: 15px;
-    background-color: #C0C0C0; 
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    width: 100%;
-
-}
-
-/* Section 2 Styles */
-.section2 {
-    padding: 15px;
-    background-color: #C0C0C0; 
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    width: 100%;
-
-}
-
-/* Section 3 Styles */
-.section3 {
-    padding: 15px;
-    background-color: #C0C0C0; 
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    width: 100%;
-}
-
-/* Section 4 Styles */
-.section4 {
-    padding: 15px;
-    background-color: #C0C0C0; 
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    width: 100%;
-}
-
-/*Create account */
- .create-account-container {
-    padding:40px;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.create-account-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-.create-account-container input{
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-#create-account{
-    background-image: url('./images/LibraryBackground.jpg');
-
-}
-
-.create-account-container button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.2rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-/*Add a Book */
-/* Add Book Container */
-.add-book-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px; /* Space between login container and image */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px;
-}
-
-/* Remove default body margins and padding */
-.add-book {
-    text-align: center; /* Center the text horizontally */
-    font-size: 2 rem; /* Larger font size to make it prominent */
-    margin: 20px 0; /* Add spacing above and below the heading */
-    padding: 0; /* Remove unnecessary padding */
-    color: black; /* Darker text color for better visibility */
-}
-
-.book-container {
-    width: 50%; /* Full width of the page */
-    max-width: none; /* Remove any width constraints if present */
-    margin: 0 auto; /* Center container if it has a width */
-    text-align: center; /* Ensure child elements like <h1> are centered */
-    flex: 1; /* Ensures the description container takes up its content width */
-    max-width: 600px
-
-}
-
-/* Description Container */
-.description-container {
-    flex: 1; /* Ensures the description container takes up its content width */
-    align-items: flex-start;
-    max-width: 600px
-
-}
-
-/* Form Group */
-.form-group {
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px 
-}
-
-.form-group input {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-/* Description Styles */
-#description {
-    width: 100%;
-    height: 200px;
-    padding: 12px;
-    font-family: Arial, sans-serif; /* Match the font family */
-    font-size: 1.1rem; /* Match the font size */
-    color: black; /* Match the font color */
-    border: 1px solid black;
-    border-radius: 4px;
-    resize: none; /* Disable resizing */
-    
-}
-
-/* Description Heading */
-.description-container h2 {
-    font-family: Arial, sans-serif; /* Use a consistent font family */
-    font-size: 1.1rem; /* Same font size */
-    font-weight: normal; /* Match the weight of other labels */
-    color: black; /* Ensure the text color is consistent */
-}
-
-
-/* Button Container */
-.button-container-submit {
-    text-align: left; /* Aligns the button to the left */
-    margin-top: 20px;
-    padding-left: 20px; /* Moves it away from the edge */
-}
-
-/* Button Styles */
-.button-container-submit button {
-    background-color: blue; /* Set the button's background to blue */
-    color: white; /* Make the text color white for contrast */
-    border: none; /* Remove any default borders */
-    padding: 10px 20px; /* Add some padding for better size */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-    font-size: 16px; /* Adjust font size */
-}
-
-.button-container-submit button:hover {
-    background-color: darkblue; /* Change button color on hover */
-}
-/* Checkbox Group */
-.form-group.checkbox-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align checkboxes to the left */
-    gap: 8px; /* Space between each checkbox */
-}
-
-/* Checkbox Label Styling */
-.form-group.checkbox-group label {
-    display: flex;
-    align-items: center; /* Vertically center the label and checkbox */
-    font-size: 1rem; /* Adjust font size */
-    color: black; /* Set label color */
-    cursor: pointer; /* Pointer cursor for better UX */
-}
-
-/* Checkbox Styling */
-.form-group.checkbox-group input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and label text */
-    width: 18px; /* Adjust checkbox size */
-    height: 18px; /* Match width and height */
+  background-color: #007bff;
+  color: white;
 }
