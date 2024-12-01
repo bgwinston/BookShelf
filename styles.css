@@ -20,6 +20,7 @@
   padding: 10px;
 }
 /* index.html */
+html,
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -54,5 +55,5 @@ body {
 .left-link:hover,
 .right-link:hover {
   background-color: #007bff;
-  color: white;
 }
+/*login.html*/
