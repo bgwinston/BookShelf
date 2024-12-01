@@ -38,6 +38,32 @@ html,body {
     background-color: #007bff;
 }
 
+/*mixins*/
+.index-container h1 {
+    .heading-style;
+}
+
+.index-container h2 {
+    .subheading-style;
+}
 
 /*login.html*/
 
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: @align-items;
+    gap: 40px; /* Space between login container and image */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+}
+
+.login-container h1{
+    .heading-style
+}
+
+.login-container h2 {
+    .subheading-style
+}

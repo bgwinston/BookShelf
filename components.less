@@ -2,18 +2,18 @@
 
 /* Reusable code */
 
-.index-container h1 {
-        font-size: 2.5rem;
-        margin: 20px 0;
-        color:@primary-color;
-        text-align:@text-align;
+.heading-style(@font-size: 2.5rem, @margin: 20px 0, @color: @text-color, @text-align: @text-align) {
+    font-size: @font-size;
+    margin: @margin;
+    color: @color;
+    text-align: @text-align;
 }
     
-.index-container h2 {
-        font-size: 1.5rem;
-        margin: 10px 0;
-        color:@primary-color;
-        text-align:@text-align;
+.subheading-style(@font-size: 1.5rem, @margin: 10px 0, @color: @primary-color, @text-align: @text-align) {
+    font-size: @font-size;
+    margin: @margin;
+    color: @color;
+    text-align: @text-align;
 }
 
 .links {
@@ -23,3 +23,4 @@
     width: 100%;
     padding: 10px;
 }
+
