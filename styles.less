@@ -1,7 +1,6 @@
 @import "variables.less";
-@import "components.less";
+@import "mixins.less";
 
-/* index.html */
 html,body {
     font-family: @font-family;
     margin: 0;
@@ -12,6 +11,7 @@ html,body {
     align-items: @align-items;
     min-height: 100vh;
 }
+
 .image-circle img {
     width: 750px; 
     height: 750px;
@@ -20,6 +20,7 @@ html,body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
+
 .left-link,
 .right-link {
     text-decoration: none;
@@ -30,7 +31,7 @@ html,body {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
 }
 
 .left-link:hover,
@@ -38,7 +39,6 @@ html,body {
     background-color: #007bff;
 }
 
-/*mixins*/
 .index-container h1 {
     .heading-style;
 }
@@ -47,29 +47,27 @@ html,body {
     .subheading-style;
 }
 
-/*login.html*/
-
 .login-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: @align-items;
-    gap: 40px; /* Space between login container and image */
+    gap: 40px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     padding: 20px;
 }
 
-.login-container h1{
-    .heading-style
+.login-container h1 {
+    .heading-style;
 }
 
 .login-container h2 {
-    .subheading-style
+    .subheading-style;
 }
 
 .create-account-container {
-    padding:40px;
+    padding: 40px;
     background-color: white;
     color: black;
     border-radius: 8px;
@@ -81,22 +79,199 @@ html,body {
 }
 
 .create-account-container h1 {
-    .heading-style
+    .heading-style;
 }
-
 
 #create-account {
-    background-image: url('images/LibraryBackground.jpg'); /* Path to your image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
-    min-height: 100vh; /* Makes the section at least full screen */
-    display: flex; /* Optional: Helps center the content */
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    padding: 20px; /* Optional: Adds spacing inside */
+    background-image: url('images/LibraryBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: @align-items;
+    justify-content: @justify-content;
+    padding: 20px;
 }
 
-.form-group input{
+.form-group input {
     .input-style;
+}
+
+/* nested styles */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #004B87;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    /* Logo styles */
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    /* Menu styles */
+    .menu {
+        display: flex;
+        gap: 15px;
+
+        /* Links inside the menu */
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #006bb3;
+            }
+        }
+    }
+
+    /* Search box inside navigation */
+    .search-box {
+        width: 200px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        color: #333;
+
+        &::placeholder {
+            color: #ccc;
+        }
+    }
+}
+
+.add-book-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-container {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.description-container {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.form-group {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    .input-style;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.description-container h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#description {
+    width: 100%;
+    height: 200px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.add-book {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.button-container-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container-submit button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container-submit button:hover {
+    background-color: darkblue;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: blue;
+    cursor: pointer;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
