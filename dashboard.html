@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>    
+    <title>Welcome to your BookShelf</title>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <img src="images/Logo.png" aria-label="Book Logo" alt="Book Logo" class="logo">
+        <div class="button-bar">
+            <button>Add a Book</button>
+            <button>Dashboard</button>
+            <button>Wishlist</button>
+            <button>Log Out</button>
+            <input class="search-box" type="text" id="search-books" name="search" placeholder="Search Books">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+    <!-- Welcome message container -->
+    <div id="dashboard-message-container" class="dashboard-message"></div>
+    <!-- Mustache template for the welcome message -->
+    <script id="welcome-template" type="text/template">
+        <h2>Welcome back, {{username}}!</h2>
+        <p>Let's explore your bookshelf and make reading more fun!</p>
+    </script>
+
+    <div class="sections-container">
+        <div class="section1">
+            <h3>Just Added!</h3>
+            <ul class="list">
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+            <a href="#">See More!</a>
+        </div>
+        <div class="section2">
+            <h3>Recommendations</h3>
+            <ul class="list">
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+            <a href="#">See More!</a>
+        </div>
+        <div class="section3">
+            <h3>Wishlist</h3>
+            <ul class="list">
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+            <a href="#">See More!</a>
+        </div>
+        <div class="section4">
+            <h3>Overdue</h3>
+            <ul class="list">
+                <li>Book 1</li>
+                <li>Book 2</li>
+                <li>Book 3</li>
+            </ul>
+            <a href="#">See More!</a>
+        </div>
+    </div>
+    
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Account Settings</a>
+            <a href="#">Blog</a>
+            <a href="#">About Us</a>
+        </div>
+    </footer>
+    
+
+    <!-- External JavaScript -->
+    <script src="app.js" defer></script>
+</body>
+</html>

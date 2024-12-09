@@ -1,23 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Listen for the form submission
-    document.getElementById('create-account-form').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent traditional form submission
+    function getQueryParam(param) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(param);
+    }
 
-        // Get the first name value
-        const firstname = document.getElementById('firstname').value;
+    const createAccountForm = document.getElementById('create-account-form');
+    if (createAccountForm) {
+        createAccountForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            const template = document.getElementById('welcome-template').innerHTML;
+            const rendered = Mustache.render(template, { firstname });
+            const welcomeMessageContainer = document.getElementById('welcome-message-container');
+            welcomeMessageContainer.innerHTML = rendered;
+            welcomeMessageContainer.style.display = 'block';
+            document.querySelector('.create-account-container').style.display = 'none';
+        });
+    }
 
-        // Retrieve the Mustache template
+    const loginForm = document.getElementById('login-form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            window.location.href = `dashboard.html?username=${encodeURIComponent(username)}`;
+        });
+    }
+
+    const dashboardWelcomeContainer = document.getElementById('dashboard-message-container');
+    if (dashboardWelcomeContainer) {
+        const username = getQueryParam('username') || 'Guest';
         const template = document.getElementById('welcome-template').innerHTML;
-
-        // Render the template with the first name
-        const rendered = Mustache.render(template, { firstname });
-
-        // Update the welcome message container
-        const welcomeMessageContainer = document.getElementById('welcome-message-container');
-        welcomeMessageContainer.innerHTML = rendered;
-
-        // Show the welcome message and hide the form
-        welcomeMessageContainer.style.display = 'block';
-        document.querySelector('.create-account-container').style.display = 'none';
-    });
+        const rendered = Mustache.render(template, { username });
+        dashboardWelcomeContainer.innerHTML = rendered;
+    }
 });
