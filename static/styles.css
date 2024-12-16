@@ -95,11 +95,9 @@ body {
 }
 .create-account-container p {
   margin-top: 20px;
-  /* Adds spacing between the form and the text */
   font-size: 1rem;
   color: black;
   text-align: left;
-  /* Ensures proper alignment */
 }
 #create-account {
   background-image: url('images/LibraryBackground.jpg');
@@ -119,7 +117,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-/* nested styles */
 .navigation {
   display: flex;
   align-items: center;
@@ -135,63 +132,38 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding-top: 15px;
   padding-bottom: 15px;
-  /* Logo styles */
-  /* Menu styles */
-  /* Search box inside navigation */
 }
 .navigation .button-bar {
   background-color: #D1AA8F;
-  /* Set the background color for the button bar */
   padding: 10px;
-  /* Add some padding for spacing */
   display: flex;
-  /* Flexbox for horizontal alignment */
   gap: 10px;
-  /* Space between buttons */
   align-items: center;
-  /* Align items vertically */
   border-radius: 8px;
-  /* Add rounded corners if desired */
 }
 .navigation .button-bar button {
   background-color: #D1AA8F;
-  /* Button background color */
   color: white;
-  /* Text color for contrast */
   border: none;
-  /* Remove border */
   border-radius: 5px;
-  /* Rounded corners for buttons */
   padding: 10px 15px;
-  /* Add spacing inside buttons */
   cursor: pointer;
-  /* Change cursor to pointer */
   font-size: 16px;
-  /* Set button font size */
   transition: background-color 0.3s ease;
-  /* Add smooth hover effect */
 }
 .navigation .button-bar button:hover {
   background-color: #B8927A;
-  /* Slightly darker shade for hover effect */
 }
 .navigation .button-bar .search-box {
   background-color: white;
-  /* Set background color for search box */
   color: #333;
-  /* Set text color */
   border: 1px solid #D1AA8F;
-  /* Match border color with button bar */
   border-radius: 5px;
-  /* Rounded corners for the search box */
   padding: 5px 10px;
-  /* Add spacing inside the input */
   flex-grow: 1;
-  /* Allow the search box to grow and fill space */
 }
 .navigation .button-bar .search-box::placeholder {
   color: #A67A6F;
-  /* Placeholder text color */
 }
 .navigation .logo {
   height: 50px;
@@ -200,7 +172,6 @@ body {
 .navigation .menu {
   display: flex;
   gap: 15px;
-  /* Links inside the menu */
 }
 .navigation .menu a {
   text-decoration: none;
@@ -325,103 +296,63 @@ body {
 }
 .sections-container {
   display: flex;
-  /* Flexbox for horizontal alignment */
   justify-content: space-between;
-  /* Evenly distribute the sections */
   flex-wrap: wrap;
-  /* Allow wrapping to the next line if needed */
   gap: 20px;
-  /* Space between sections */
   padding: 20px;
-  /* Add padding around the container */
 }
 .sections-container .section1,
 .sections-container .section2,
 .sections-container .section3,
 .sections-container .section4 {
   flex: 1;
-  /* All sections take equal width */
   min-width: 250px;
-  /* Ensure sections don't get too small */
   max-width: 350px;
-  /* Optional: Limit maximum width */
   background-color: #f9f9f9;
-  /* Background color for contrast */
   border: 1px solid #ddd;
-  /* Subtle border for definition */
   border-radius: 8px;
-  /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Shadow for depth */
   padding: 20px;
-  /* Space inside each section */
   text-align: center;
-  /* Center-align text */
 }
 footer {
   width: 100%;
-  /* Ensure the footer spans the full width of the page */
   background-color: #f1f1f1;
-  /* Light background for contrast */
   padding: 20px;
-  /* Add padding for spacing */
   box-sizing: border-box;
   position: fixed;
-  /* Stick the footer to the bottom */
   bottom: 0;
   left: 0;
   display: flex;
-  /* Flexbox for layout */
   justify-content: space-between;
-  /* Spread links across the footer */
   align-items: center;
-  /* Align content vertically */
   z-index: 10;
-  /* Ensure it's above other elements */
 }
 .footer-links {
   display: flex;
-  /* Flexbox for links */
   justify-content: space-between;
-  /* Distribute links evenly */
   width: 100%;
-  /* Take the full width of the footer */
   padding: 0 20px;
-  /* Add some padding on the sides */
 }
 .footer-links a {
   text-decoration: none;
-  /* Remove underline */
   color: black;
-  /* Set text color */
   margin: 0 15px;
-  /* Space between links */
   font-size: 1rem;
-  /* Make text legible */
 }
 .footer-links a:hover {
   text-decoration: underline;
-  /* Add underline on hover */
 }
 #welcome-message-container {
   display: none;
-  /* Initially hide the container */
 }
 .welcome-wrapper {
   background-color: white;
-  /* White background */
   color: black;
-  /* Ensure text is readable */
   padding: 20px;
-  /* Add some spacing inside the container */
   border-radius: 8px;
-  /* Rounded corners for a polished look */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
   max-width: 600px;
-  /* Limit width for better readability */
   margin: 20px auto;
-  /* Center the container and add vertical spacing */
   text-align: center;
-  /* Center-align the text */
 }
